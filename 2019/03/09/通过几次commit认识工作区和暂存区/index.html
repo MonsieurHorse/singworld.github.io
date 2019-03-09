@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | SingWorld</title>
+  <title>通过几次commit认识工作区和暂存区 | SingWorld</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="版本历史暂存区工作目录 git statusgit add 多个文件或文件夹名git commit -m &amp;quot;提交理由&amp;quot; git add -ugit commit -m &amp;quot;modify&amp;quot;git log //查看信息">
+<meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/03/09/hello-world/index.html">
+<meta property="og:title" content="通过几次commit认识工作区和暂存区">
+<meta property="og:url" content="http://yoursite.com/2019/03/09/通过几次commit认识工作区和暂存区/index.html">
 <meta property="og:site_name" content="SingWorld">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="版本历史暂存区工作目录 git statusgit add 多个文件或文件夹名git commit -m &amp;quot;提交理由&amp;quot; git add -ugit commit -m &amp;quot;modify&amp;quot;git log //查看信息">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-09T06:46:57.329Z">
+<meta property="og:updated_time" content="2019-03-09T07:20:41.888Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="通过几次commit认识工作区和暂存区">
+<meta name="twitter:description" content="版本历史暂存区工作目录 git statusgit add 多个文件或文件夹名git commit -m &amp;quot;提交理由&amp;quot; git add -ugit commit -m &amp;quot;modify&amp;quot;git log //查看信息">
   
     <link rel="alternative" href="/atom.xml" title="SingWorld" type="application/atom+xml">
   
@@ -154,35 +155,29 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-通过几次commit认识工作区和暂存区" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      通过几次commit认识工作区和暂存区
     </h1>
   
 
         
-        <a href="/2019/03/09/hello-world/" class="archive-article-date">
-  	<time datetime="2019-03-09T06:46:57.329Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
+        <a href="/2019/03/09/通过几次commit认识工作区和暂存区/" class="archive-article-date">
+  	<time datetime="2019-03-09T05:54:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>版本历史<br>暂存区<br>工作目录</p>
+<p><code>git status</code><br><code>git add 多个文件或文件夹名</code><br><code>git commit -m &quot;提交理由&quot;</code></p>
+<p><code>git add -u</code><br><code>git commit -m &quot;modify&quot;</code><br><code>git log //查看信息</code></p>
 
       
 
@@ -212,6 +207,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -262,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/09/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/09/通过几次commit认识工作区和暂存区/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -276,18 +282,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/03/09/git给文件重命名/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/03/09/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          git给文件重命名
+          Hello World
         
       </div>
     </a>
   
   
-    <a href="/2019/03/09/通过几次commit认识工作区和暂存区/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">通过几次commit认识工作区和暂存区</div>
+    <a href="/2019/03/08/创建一个仓库并配置local用户信息/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">创建一个仓库并配置local用户信息</div>
       <i class="icon-circle-right"></i>
     </a>
   
