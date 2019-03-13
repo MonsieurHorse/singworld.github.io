@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>git给文件重命名 | SingWorld</title>
+  <title>通过gitlog查看版本演变历史 | SingWorld</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="方法一 mv 原文件 新文件名   重命名 git add 新文件名 git rm 原文件名  复原git reset --hard //清除暂存区 方式二git mv 原文件 新文件名git commit -m &amp;quot;move&amp;quot;">
+  <meta name="description" content="git log --oneline  //一次变更git log -n4 --oneline 最近的4次commit git branch -v 查看分支 创建分支git checkout -b temp（分支名） 415821781（版本号） git commit -am &amp;quot;add&amp;quot;工作区的东西直接提交到版本库不推荐 git branch -avgit log --all 查">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git给文件重命名">
-<meta property="og:url" content="http://yoursite.com/2019/03/09/git给文件重命名/index.html">
+<meta property="og:title" content="通过gitlog查看版本演变历史">
+<meta property="og:url" content="http://yoursite.com/2019/03/09/通过gitlog查看版本演变历史/index.html">
 <meta property="og:site_name" content="SingWorld">
-<meta property="og:description" content="方法一 mv 原文件 新文件名   重命名 git add 新文件名 git rm 原文件名  复原git reset --hard //清除暂存区 方式二git mv 原文件 新文件名git commit -m &amp;quot;move&amp;quot;">
+<meta property="og:description" content="git log --oneline  //一次变更git log -n4 --oneline 最近的4次commit git branch -v 查看分支 创建分支git checkout -b temp（分支名） 415821781（版本号） git commit -am &amp;quot;add&amp;quot;工作区的东西直接提交到版本库不推荐 git branch -avgit log --all 查">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-09T07:31:45.541Z">
+<meta property="og:updated_time" content="2019-03-10T12:49:33.086Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git给文件重命名">
-<meta name="twitter:description" content="方法一 mv 原文件 新文件名   重命名 git add 新文件名 git rm 原文件名  复原git reset --hard //清除暂存区 方式二git mv 原文件 新文件名git commit -m &amp;quot;move&amp;quot;">
+<meta name="twitter:title" content="通过gitlog查看版本演变历史">
+<meta name="twitter:description" content="git log --oneline  //一次变更git log -n4 --oneline 最近的4次commit git branch -v 查看分支 创建分支git checkout -b temp（分支名） 415821781（版本号） git commit -am &amp;quot;add&amp;quot;工作区的东西直接提交到版本库不推荐 git branch -avgit log --all 查">
   
     <link rel="alternative" href="/atom.xml" title="SingWorld" type="application/atom+xml">
   
@@ -155,33 +155,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-git给文件重命名" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-通过gitlog查看版本演变历史" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      git给文件重命名
+      通过gitlog查看版本演变历史
     </h1>
   
 
         
-        <a href="/2019/03/09/git给文件重命名/" class="archive-article-date">
-  	<time datetime="2019-03-09T07:22:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
+        <a href="/2019/03/09/通过gitlog查看版本演变历史/" class="archive-article-date">
+  	<time datetime="2019-03-09T07:43:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><ol>
-<li>mv 原文件 新文件名   重命名</li>
-<li>git add 新文件名</li>
-<li>git rm 原文件名</li>
-</ol>
-<h1 id="复原"><a href="#复原" class="headerlink" title="复原"></a>复原</h1><p><code>git reset --hard</code> //清除暂存区</p>
-<h1 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h1><p><code>git mv 原文件 新文件名</code><br><code>git commit -m &quot;move&quot;</code></p>
+        <p><code>git log --oneline  //一次变更</code><br><code>git log -n4 --oneline 最近的4次commit</code></p>
+<p><code>git branch -v 查看分支</code></p>
+<p>创建分支<br><code>git checkout -b temp（分支名） 415821781（版本号）</code></p>
+<p><code>git commit -am &quot;add&quot;</code>工作区的东西直接提交到版本库不推荐</p>
+<p><code>git branch -av</code><br><code>git log --all 查看所有分支</code><br><code>git log --all --graph 图形化版本演进</code></p>
+<p><code>git log --oneline --all --n4 --graphgcd</code></p>
+<p><code>gitk  进入版本图形界面</code></p>
 
       
 
@@ -272,7 +272,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/09/git给文件重命名/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/09/通过gitlog查看版本演变历史/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -286,18 +286,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/03/09/通过gitlog查看版本演变历史/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/03/09/探秘-git目录/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          通过gitlog查看版本演变历史
+          探秘.git目录
         
       </div>
     </a>
   
   
-    <a href="/2019/03/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/03/09/git给文件重命名/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git给文件重命名</div>
       <i class="icon-circle-right"></i>
     </a>
   

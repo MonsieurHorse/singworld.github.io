@@ -152,6 +152,349 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-认识工作区与暂存区" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/13/认识工作区与暂存区/">认识工作区与暂存区</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/13/认识工作区与暂存区/" class="archive-article-date">
+  	<time datetime="2019-03-13T12:24:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="探秘-git目录"><a href="#探秘-git目录" class="headerlink" title="探秘.git目录"></a>探秘.git目录</h2><h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2><p><code>git checkout master</code></p>
+<p>.git/HEAD 的引用分支告诉我们工作在哪个分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.git/config</span><br><span class="line">git config --local user.name</span><br><span class="line"></span><br><span class="line">git cat-file -t 查看类型</span><br><span class="line">git cat-file -p 查看内容</span><br></pre></td></tr></table></figure>
+<h2 id="通过gitlog查看版本演变历史"><a href="#通过gitlog查看版本演变历史" class="headerlink" title="通过gitlog查看版本演变历史"></a>通过gitlog查看版本演变历史</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git log --oneline  //一次变更</span><br><span class="line">it log -n4 --oneline 最近的4次commit</span><br></pre></td></tr></table></figure>
+<p><code>git branch -v 查看分支</code></p>
+<h2 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h2><p><code>git checkout -b temp（分支名） 415821781（版本号）</code></p>
+<p><code>git commit -am &quot;add&quot;</code>工作区的东西直接提交到版本库不推荐</p>
+<p><code>git branch -av</code><br><code>git log --all 查看所有分支</code><br><code>git log --all --graph 图形化版本演进</code></p>
+<p><code>git log --oneline --all --n4 --graphgcd</code></p>
+<p><code>gitk  进入版本图形界面</code></p>
+<h2 id="通过几次commit认识工作区和暂存区"><a href="#通过几次commit认识工作区和暂存区" class="headerlink" title="通过几次commit认识工作区和暂存区"></a>通过几次commit认识工作区和暂存区</h2><p>版本历史<br>暂存区<br>工作目录</p>
+<p><code>git status</code><br><code>git add 多个文件或文件夹名</code><br><code>git commit -m &quot;提交理由&quot;</code></p>
+<p><code>git add -u</code><br><code>git commit -m &quot;modify&quot;</code><br><code>git log //查看信息</code><br>简单解释一下git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
+<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p>初始化一个Git仓库，使用git init命令。</p>
+<p>添加文件到Git仓库，分两步：</p>
+<ol>
+<li>使用命令git add <file>，注意，可反复多次使用，添加多个文件；</file></li>
+<li>使用命令git commit -m <message>，完成。</message></li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/13/认识工作区与暂存区/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-安装git并配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/12/安装git并配置/">安装git并配置</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/12/安装git并配置/" class="archive-article-date">
+  	<time datetime="2019-03-12T14:53:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="在Linux上安装Git"><a href="#在Linux上安装Git" class="headerlink" title="在Linux上安装Git"></a>在Linux上安装Git</h2><p><code>sudo apt-get install git</code></p>
+<h2 id="在Mac-OS-X上安装Git-直接下载一路next安装"><a href="#在Mac-OS-X上安装Git-直接下载一路next安装" class="headerlink" title="在Mac OS X上安装Git,直接下载一路next安装"></a>在Mac OS X上安装Git,直接下载一路next安装</h2><p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
+<h2 id="在Windows上安装Git，直接下载一路next安装"><a href="#在Windows上安装Git，直接下载一路next安装" class="headerlink" title="在Windows上安装Git，直接下载一路next安装"></a>在Windows上安装Git，直接下载一路next安装</h2><p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
+<h2 id="安装完成后，还需要最后一步设置，最小配置"><a href="#安装完成后，还需要最后一步设置，最小配置" class="headerlink" title="安装完成后，还需要最后一步设置，最小配置"></a>安装完成后，还需要最后一步设置，最小配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name&apos;you_name&apos;</span><br><span class="line">git config --global user.email&apos;you_email&apos;</span><br></pre></td></tr></table></figure>
+<h2 id="显示config配置"><a href="#显示config配置" class="headerlink" title="显示config配置"></a>显示config配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --list --local</span><br><span class="line">git config --list --global</span><br><span class="line">git config --list --system</span><br></pre></td></tr></table></figure>
+<h2 id="git的权限范围"><a href="#git的权限范围" class="headerlink" title="git的权限范围"></a>git的权限范围</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --local</span><br><span class="line">git config --local</span><br><span class="line">git config --system</span><br></pre></td></tr></table></figure>
+<h2 id="创建一个仓库并配置local用户信息"><a href="#创建一个仓库并配置local用户信息" class="headerlink" title="创建一个仓库并配置local用户信息"></a>创建一个仓库并配置local用户信息</h2><ol>
+<li><p>把已有的项目代码纳入git管理<br>cd 项目代码所在的文件夹<br>git init</p>
+</li>
+<li><p>新建的项目直接使用git管理<br>cd 某个文件夹<br>git init your_project<br>cd your_project</p>
+</li>
+</ol>
+<p><code>git commit -m  ‘理由’ //-m 提交注释理由</code></p>
+<h2 id="文件没被git管控"><a href="#文件没被git管控" class="headerlink" title="文件没被git管控"></a>文件没被git管控</h2><h2 id="新添加的文件执行"><a href="#新添加的文件执行" class="headerlink" title="新添加的文件执行"></a>新添加的文件执行</h2><p><code>git add 文件名</code><br><code>git status //查看git状况</code></p>
+<p><code>git log //查看日志</code></p>
+<h2 id="git给文件重命名"><a href="#git给文件重命名" class="headerlink" title="git给文件重命名"></a>git给文件重命名</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><ol>
+<li>mv 原文件 新文件名   重命名</li>
+<li>git add 新文件名</li>
+<li>git rm 原文件名</li>
+</ol>
+<h3 id="复原"><a href="#复原" class="headerlink" title="复原"></a>复原</h3><p><code>git reset --hard</code> //清除暂存区</p>
+<h3 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h3><p><code>git mv 原文件 新文件名</code><br><code>git commit -m &quot;move&quot;</code></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/12/安装git并配置/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-探秘-git目录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/09/探秘-git目录/">探秘.git目录</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/09/探秘-git目录/" class="archive-article-date">
+  	<time datetime="2019-03-09T13:15:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>切换分支<br><code>git checkout master</code></p>
+<p>.git/HEAD 的引用分支告诉我们工作在哪个分支<br>.git/config<br>git config –local user.name</p>
+<p>git cat-file -t 查看类型<br>git cat-file -p 查看内容</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/09/探秘-git目录/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-通过gitlog查看版本演变历史" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/09/通过gitlog查看版本演变历史/">通过gitlog查看版本演变历史</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/09/通过gitlog查看版本演变历史/" class="archive-article-date">
+  	<time datetime="2019-03-09T07:43:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><code>git log --oneline  //一次变更</code><br><code>git log -n4 --oneline 最近的4次commit</code></p>
+<p><code>git branch -v 查看分支</code></p>
+<p>创建分支<br><code>git checkout -b temp（分支名） 415821781（版本号）</code></p>
+<p><code>git commit -am &quot;add&quot;</code>工作区的东西直接提交到版本库不推荐</p>
+<p><code>git branch -av</code><br><code>git log --all 查看所有分支</code><br><code>git log --all --graph 图形化版本演进</code></p>
+<p><code>git log --oneline --all --n4 --graphgcd</code></p>
+<p><code>gitk  进入版本图形界面</code></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/09/通过gitlog查看版本演变历史/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-git给文件重命名" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -616,88 +959,10 @@
 
 
   
-    <article id="post-博客安装过程遇到到坑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/博客安装过程遇到到坑/">博客安装过程遇到到坑</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/08/博客安装过程遇到到坑/" class="archive-article-date">
-  	<time datetime="2019-03-08T08:43:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="hexo搭建博客"><a href="#hexo搭建博客" class="headerlink" title="hexo搭建博客"></a>hexo搭建博客</h1><h2 id="下载nodejs"><a href="#下载nodejs" class="headerlink" title="下载nodejs"></a>下载nodejs</h2><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
-<h2 id="hexo安装（用root是一个坑每次修改都要输入密码）"><a href="#hexo安装（用root是一个坑每次修改都要输入密码）" class="headerlink" title="hexo安装（用root是一个坑每次修改都要输入密码）"></a>hexo安装（用root是一个坑每次修改都要输入密码）</h2><p><code></code>sudo su //切换root用户<br>npm install -g cnpm registry=https:registry.npm.taobao.org<br>cnpm install -g hexo-cli</p>
-<h2 id="hexo初始化"><a href="#hexo初始化" class="headerlink" title="hexo初始化"></a>hexo初始化</h2><p>hexo -v检查版本<br>mkdir blog 建立博客文件夹<br>cd blog<br>hexo init<br>hexo -s</p>
-<h2 id="新建博客文章"><a href="#新建博客文章" class="headerlink" title="新建博客文章"></a>新建博客文章</h2><p><code></code>hexo n “hellworld”</p>
-<p>hexo clean<br>hexo g 生成</p>
-<p>cnpm install  –save hexo-deployer-git<br>git配置<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/singworld/singworld.github.io.git" target="_blank" rel="noopener">https://github.com/singworld/singworld.github.io.git</a><br>  branch: master</p>
-<p>  主题安装：yilia<br>jsonContent: 前没有空格</p>
-<p>123行前有一个空格</p>
-<p>剩下的有两个空格</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> jsonContent:</span><br><span class="line">meta: false</span><br><span class="line">pages: false</span><br><span class="line">posts:</span><br><span class="line"> title: true</span><br><span class="line"> date: true</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">安装</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/08/博客安装过程遇到到坑/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
