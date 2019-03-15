@@ -152,6 +152,106 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Git常用文件管理命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/15/Git常用文件管理命令/">Git常用文件管理命令</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/15/Git常用文件管理命令/" class="archive-article-date">
+  	<time datetime="2019-03-15T10:35:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="GIt三个对象"><a href="#GIt三个对象" class="headerlink" title="GIt三个对象"></a>GIt三个对象</h2><ol>
+<li>commit 提交ID</li>
+<li>tree  文件夹</li>
+<li>blob 文件<br><img src="https://upload-images.jianshu.io/upload_images/6298987-1db72aa8413d5a4e.png" alt="img"></li>
+</ol>
+<h2 id="分离头指针"><a href="#分离头指针" class="headerlink" title="分离头指针"></a>分离头指针</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout 某个commitID</span><br></pre></td></tr></table></figure>
+<p>工作在没有分支的情况下很危险<br>解决办法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch 分支名 commitID</span><br></pre></td></tr></table></figure></p>
+<h2 id="理解Head和branch"><a href="#理解Head和branch" class="headerlink" title="理解Head和branch"></a>理解Head和branch</h2><p>创建新分支直接切换<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b 新分支名 上面的分支名</span><br></pre></td></tr></table></figure></p>
+<h2 id="比较两个commit"><a href="#比较两个commit" class="headerlink" title="比较两个commit"></a>比较两个commit</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git diff commitID commitID </span><br><span class="line">git diff Head Head^1父亲</span><br></pre></td></tr></table></figure>
+<h2 id="怎么删除不需要的分支"><a href="#怎么删除不需要的分支" class="headerlink" title="怎么删除不需要的分支"></a>怎么删除不需要的分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -d 分支名</span><br><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>
+<h2 id="怎么修改最近一次commit的message"><a href="#怎么修改最近一次commit的message" class="headerlink" title="怎么修改最近一次commit的message"></a>怎么修改最近一次commit的message</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
+<p>修改老旧的commit老家message<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i 父亲commitID 修改</span><br></pre></td></tr></table></figure></p>
+<h2 id="怎么把连续多个commit整理成一个"><a href="#怎么把连续多个commit整理成一个" class="headerlink" title="怎么把连续多个commit整理成一个"></a>怎么把连续多个commit整理成一个</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i 父commitID squash commitID</span><br></pre></td></tr></table></figure>
+<h2 id="把间隔的commit合并"><a href="#把间隔的commit合并" class="headerlink" title="把间隔的commit合并"></a>把间隔的commit合并</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pick 祖commitID</span><br><span class="line">s commitID</span><br></pre></td></tr></table></figure>
+<h2 id="记录每一次命令"><a href="#记录每一次命令" class="headerlink" title="记录每一次命令"></a>记录每一次命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br><span class="line">git checkout --&lt;file&gt;  //撤销文件</span><br><span class="line">git checkout 分支名  //没有--就是切换分支</span><br></pre></td></tr></table></figure>
+<h2 id="比较暂存区和Head差异"><a href="#比较暂存区和Head差异" class="headerlink" title="比较暂存区和Head差异"></a>比较暂存区和Head差异</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git diff --Cashed</span><br><span class="line">git diff</span><br></pre></td></tr></table></figure>
+<h2 id="暂存区恢复和Head一样"><a href="#暂存区恢复和Head一样" class="headerlink" title="暂存区恢复和Head一样"></a>暂存区恢复和Head一样</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git rest HEAD&lt;file&gt;</span><br><span class="line">git rest HEAD //取消所有暂存区</span><br></pre></td></tr></table></figure>
+<h2 id="如何让工作区文件恢复和暂存区一样"><a href="#如何让工作区文件恢复和暂存区一样" class="headerlink" title="如何让工作区文件恢复和暂存区一样"></a>如何让工作区文件恢复和暂存区一样</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout --&lt;file&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="取消暂存区部分文件"><a href="#取消暂存区部分文件" class="headerlink" title="取消暂存区部分文件"></a>取消暂存区部分文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rest HEAD&lt;file&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="消除最近几次提交，某些commit不想要了"><a href="#消除最近几次提交，某些commit不想要了" class="headerlink" title="消除最近几次提交，某些commit不想要了"></a>消除最近几次提交，某些commit不想要了</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch --av</span><br><span class="line">git rest --hard commitID</span><br></pre></td></tr></table></figure>
+<h2 id="看看不同提交指定文件的差异，master和temp分支的差异"><a href="#看看不同提交指定文件的差异，master和temp分支的差异" class="headerlink" title="看看不同提交指定文件的差异，master和temp分支的差异"></a>看看不同提交指定文件的差异，master和temp分支的差异</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git diff temp master</span><br><span class="line">git diff temp master --&lt;file&gt; //分支某个文件的差异</span><br><span class="line">git diff commitID commitID --&lt;file&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="正确删除版本库文件"><a href="#正确删除版本库文件" class="headerlink" title="正确删除版本库文件"></a>正确删除版本库文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rm readme</span><br><span class="line">git rm readme</span><br><span class="line"></span><br><span class="line">or</span><br><span class="line">git rm &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="临时加塞紧急任务"><a href="#临时加塞紧急任务" class="headerlink" title="临时加塞紧急任务"></a>临时加塞紧急任务</h2><ol>
+<li>先把手头工作存起来</li>
+<li>修复紧急任务后，再回来</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git stash //存起来，工作区干净开始干别的</span><br><span class="line">git stash apply //恢复stash还保留</span><br><span class="line">got stash pop  //恢复stash删除</span><br><span class="line">git rest --hard HEAD</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/15/Git常用文件管理命令/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-认识工作区与暂存区" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -880,85 +980,6 @@
 
 
   
-    <article id="post-JAVA并发学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/08/JAVA并发学习/">JAVA并发编程的三个核心问题</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/08/JAVA并发学习/" class="archive-article-date">
-  	<time datetime="2019-03-08T12:10:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="并发编程可以总结为三个核心问题：分工、同步、互斥。"><a href="#并发编程可以总结为三个核心问题：分工、同步、互斥。" class="headerlink" title="并发编程可以总结为三个核心问题：分工、同步、互斥。"></a>并发编程可以总结为三个核心问题：分工、同步、互斥。</h1><ul>
-<li>所谓分工指的是如何高效地拆解任务并分配给线程</li>
-<li>而同步指的是线程之间如何协作</li>
-<li>互斥则是保证同一时刻只允许一个线程访问共享资源</li>
-<li>Java SDK 并发包很大部分内容都是按照这三个维度组织的</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">并发</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/08/JAVA并发学习/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1054,6 +1075,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">并发</a>

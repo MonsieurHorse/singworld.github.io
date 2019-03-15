@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | SingWorld</title>
+  <title>Git常用文件管理命令 | SingWorld</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="SingWorld">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="GIt三个对象 commit 提交ID tree  文件夹 blob 文件  分离头指针1git checkout 某个commitID 工作在没有分支的情况下很危险解决办法1git branch 分支名 commitID 理解Head和branch创建新分支直接切换1git checkout -b 新分支名 上面的分支名 比较两个commit12git diff commitID commitI">
+<meta name="keywords" content="Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git常用文件管理命令">
+<meta property="og:url" content="http://yoursite.com/2019/03/15/Git常用文件管理命令/index.html">
 <meta property="og:site_name" content="SingWorld">
+<meta property="og:description" content="GIt三个对象 commit 提交ID tree  文件夹 blob 文件  分离头指针1git checkout 某个commitID 工作在没有分支的情况下很危险解决办法1git branch 分支名 commitID 理解Head和branch创建新分支直接切换1git checkout -b 新分支名 上面的分支名 比较两个commit12git diff commitID commitI">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/6298987-1db72aa8413d5a4e.png">
+<meta property="og:updated_time" content="2019-03-15T14:43:19.920Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SingWorld">
+<meta name="twitter:title" content="Git常用文件管理命令">
+<meta name="twitter:description" content="GIt三个对象 commit 提交ID tree  文件夹 blob 文件  分离头指针1git checkout 某个commitID 工作在没有分支的情况下很危险解决办法1git branch 分支名 commitID 理解Head和branch创建新分支直接切换1git checkout -b 新分支名 上面的分支名 比较两个commit12git diff commitID commitI">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/6298987-1db72aa8413d5a4e.png">
   
     <link rel="alternative" href="/atom.xml" title="SingWorld" type="application/atom+xml">
   
@@ -150,36 +157,82 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Git常用文件管理命令" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/15/Git常用文件管理命令/" class="archive-article-date">
-  	<time datetime="2019-03-15T10:35:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/15/Git常用文件管理命令/">Git常用文件管理命令</a>
+    <h1 class="article-title" itemprop="name">
+      Git常用文件管理命令
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/03/15/Git常用文件管理命令/" class="archive-article-date">
+  	<time datetime="2019-03-15T10:35:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="GIt三个对象"><a href="#GIt三个对象" class="headerlink" title="GIt三个对象"></a>GIt三个对象</h2><ol>
+<li>commit 提交ID</li>
+<li>tree  文件夹</li>
+<li>blob 文件<br><img src="https://upload-images.jianshu.io/upload_images/6298987-1db72aa8413d5a4e.png" alt="img"></li>
+</ol>
+<h2 id="分离头指针"><a href="#分离头指针" class="headerlink" title="分离头指针"></a>分离头指针</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout 某个commitID</span><br></pre></td></tr></table></figure>
+<p>工作在没有分支的情况下很危险<br>解决办法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch 分支名 commitID</span><br></pre></td></tr></table></figure></p>
+<h2 id="理解Head和branch"><a href="#理解Head和branch" class="headerlink" title="理解Head和branch"></a>理解Head和branch</h2><p>创建新分支直接切换<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b 新分支名 上面的分支名</span><br></pre></td></tr></table></figure></p>
+<h2 id="比较两个commit"><a href="#比较两个commit" class="headerlink" title="比较两个commit"></a>比较两个commit</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git diff commitID commitID </span><br><span class="line">git diff Head Head^1父亲</span><br></pre></td></tr></table></figure>
+<h2 id="怎么删除不需要的分支"><a href="#怎么删除不需要的分支" class="headerlink" title="怎么删除不需要的分支"></a>怎么删除不需要的分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -d 分支名</span><br><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>
+<h2 id="怎么修改最近一次commit的message"><a href="#怎么修改最近一次commit的message" class="headerlink" title="怎么修改最近一次commit的message"></a>怎么修改最近一次commit的message</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
+<p>修改老旧的commit老家message<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i 父亲commitID 修改</span><br></pre></td></tr></table></figure></p>
+<h2 id="怎么把连续多个commit整理成一个"><a href="#怎么把连续多个commit整理成一个" class="headerlink" title="怎么把连续多个commit整理成一个"></a>怎么把连续多个commit整理成一个</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i 父commitID squash commitID</span><br></pre></td></tr></table></figure>
+<h2 id="把间隔的commit合并"><a href="#把间隔的commit合并" class="headerlink" title="把间隔的commit合并"></a>把间隔的commit合并</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pick 祖commitID</span><br><span class="line">s commitID</span><br></pre></td></tr></table></figure>
+<h2 id="记录每一次命令"><a href="#记录每一次命令" class="headerlink" title="记录每一次命令"></a>记录每一次命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br><span class="line">git checkout --&lt;file&gt;  //撤销文件</span><br><span class="line">git checkout 分支名  //没有--就是切换分支</span><br></pre></td></tr></table></figure>
+<h2 id="比较暂存区和Head差异"><a href="#比较暂存区和Head差异" class="headerlink" title="比较暂存区和Head差异"></a>比较暂存区和Head差异</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git diff --Cashed</span><br><span class="line">git diff</span><br></pre></td></tr></table></figure>
+<h2 id="暂存区恢复和Head一样"><a href="#暂存区恢复和Head一样" class="headerlink" title="暂存区恢复和Head一样"></a>暂存区恢复和Head一样</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git rest HEAD&lt;file&gt;</span><br><span class="line">git rest HEAD //取消所有暂存区</span><br></pre></td></tr></table></figure>
+<h2 id="如何让工作区文件恢复和暂存区一样"><a href="#如何让工作区文件恢复和暂存区一样" class="headerlink" title="如何让工作区文件恢复和暂存区一样"></a>如何让工作区文件恢复和暂存区一样</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout --&lt;file&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="取消暂存区部分文件"><a href="#取消暂存区部分文件" class="headerlink" title="取消暂存区部分文件"></a>取消暂存区部分文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rest HEAD&lt;file&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="消除最近几次提交，某些commit不想要了"><a href="#消除最近几次提交，某些commit不想要了" class="headerlink" title="消除最近几次提交，某些commit不想要了"></a>消除最近几次提交，某些commit不想要了</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch --av</span><br><span class="line">git rest --hard commitID</span><br></pre></td></tr></table></figure>
+<h2 id="看看不同提交指定文件的差异，master和temp分支的差异"><a href="#看看不同提交指定文件的差异，master和temp分支的差异" class="headerlink" title="看看不同提交指定文件的差异，master和temp分支的差异"></a>看看不同提交指定文件的差异，master和temp分支的差异</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git diff temp master</span><br><span class="line">git diff temp master --&lt;file&gt; //分支某个文件的差异</span><br><span class="line">git diff commitID commitID --&lt;file&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="正确删除版本库文件"><a href="#正确删除版本库文件" class="headerlink" title="正确删除版本库文件"></a>正确删除版本库文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rm readme</span><br><span class="line">git rm readme</span><br><span class="line"></span><br><span class="line">or</span><br><span class="line">git rm &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="临时加塞紧急任务"><a href="#临时加塞紧急任务" class="headerlink" title="临时加塞紧急任务"></a>临时加塞紧急任务</h2><ol>
+<li>先把手头工作存起来</li>
+<li>修复紧急任务后，再回来</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git stash //存起来，工作区干净开始干别的</span><br><span class="line">git stash apply //恢复stash还保留</span><br><span class="line">got stash pop  //恢复stash删除</span><br><span class="line">git rest --hard HEAD</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,353 +244,105 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/15/Git常用文件管理命令/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/13/认识工作区与暂存区/" class="archive-article-date">
-  	<time datetime="2019-03-13T12:24:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-13</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/13/认识工作区与暂存区/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">认识工作区与暂存区</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/13/认识工作区与暂存区/">认识工作区与暂存区</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/12/安装git并配置/" class="archive-article-date">
-  	<time datetime="2019-03-12T14:53:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/12/安装git并配置/">安装git并配置</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/09/探秘-git目录/" class="archive-article-date">
-  	<time datetime="2019-03-09T13:15:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/09/探秘-git目录/">探秘.git目录</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/09/通过gitlog查看版本演变历史/" class="archive-article-date">
-  	<time datetime="2019-03-09T07:43:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/09/通过gitlog查看版本演变历史/">通过gitlog查看版本演变历史</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/09/git给文件重命名/" class="archive-article-date">
-  	<time datetime="2019-03-09T07:22:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/09/git给文件重命名/">git给文件重命名</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/09/hello-world/" class="archive-article-date">
-  	<time datetime="2019-03-09T06:46:57.329Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/09/通过几次commit认识工作区和暂存区/" class="archive-article-date">
-  	<time datetime="2019-03-09T05:54:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/09/通过几次commit认识工作区和暂存区/">通过几次commit认识工作区和暂存区</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/08/创建一个仓库并配置local用户信息/" class="archive-article-date">
-  	<time datetime="2019-03-08T13:38:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/08/创建一个仓库并配置local用户信息/">创建一个仓库并配置local用户信息</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/08/使用git之前的最小配置/" class="archive-article-date">
-  	<time datetime="2019-03-08T13:31:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/08/使用git之前的最小配置/">使用git之前的最小配置</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2019/page/2/">2</a><a class="extend next" rel="next" href="/archives/2019/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -561,8 +366,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
